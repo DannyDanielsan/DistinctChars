@@ -1,0 +1,10 @@
+﻿@model DistinctCharsApp.Models.SentenceModel
+    <h2>Sentence Parser</h2>
+
+@using (Html.BeginForm("ParsedSentence", "Sentence", FormMethod.Post))
+{
+    @Html.TextBoxFor(model => model.OriginalSentence)
+    @Html.ValidationMessageFor(model => model.OriginalSentence)
+    <button class="btn-primary" type="submit">Parse Sentence</button>
+}
+

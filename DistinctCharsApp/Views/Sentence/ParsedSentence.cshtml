@@ -1,0 +1,22 @@
+﻿@model DistinctCharsApp.Models.SentenceModel
+
+@{
+    ViewData["Title"] = "ParsedSentence";
+}
+
+<h2>Parsed Sentence</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>Original Sentence:</dt>
+        <dd>
+            @Html.DisplayFor(model => model.OriginalSentence)
+        </dd>
+        <dt>Parsed Sentence:</dt>
+        <dd>
+            @Html.DisplayFor(model => model.ParsedSentence)
+        </dd>
+    </dl>
+</div>
+
